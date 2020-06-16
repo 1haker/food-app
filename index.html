@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,33 +17,35 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h2 class="logo">Foody</h2>
-        <input type="checkbox" id="chk" />
-        <label for="chk" class="show-menu-btn">
-          <i class="fas fa-bars"></i>
+      <!-- <nav> -->
+      <a href="#top"><h2 class="logo">Foody</h2></a>
+
+      <input type="checkbox" id="chk" />
+      <label for="chk" class="show-menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="nav-menu">
+        <li><a href="#our-story">Our Story</a></li>
+        <li><a href="#specialities">Special Menu</a></li>
+        <li><a href="#our-menu">Our Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><i class="fas fa-search search"></i></li>
+        <li><i class="fas fa-shopping-bag my-bag"></i></li>
+        <label for="chk" class="hide-menu-btn">
+          <i class="fas fa-times"></i>
         </label>
-        <ul class="nav-menu">
-          <li><a href="#">Welcome</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Restaurant</a></li>
-          <li><a href="#">Find Us</a></li>
-          <li><i class="fas fa-search search"></i></li>
-          <li><i class="fas fa-shopping-bag my-bag"></i></li>
-          <label for="chk" class="hide-menu-btn">
-            <i class="fas fa-times"></i>
-          </label>
-        </ul>
-      </nav>
-      <h2 class="header-title-1">Welcome</h2>
+      </ul>
+      <!-- </nav> -->
+      <!-- <h2 class="header-title-1">Welcome</h2>
       <h1 class="header-title-2">5 STARS RESTAURANT</h1>
-      <a href="#" class="header-cta-button">BOOK TABLE</a>
+      <a href="#" class="header-cta-button">BOOK TABLE</a> -->
     </header>
+    <section class="banner"></section>
 
     <!-- START DISCOVER SECTION -->
 
-    <section class="discover-section">
+    <section class="discover-section" id="our-story">
       <div class="food-item food-border" data-aos="fade-right">
         <div class="food-overlay">
           <h1 class="discover-h1">Discover</h1>
@@ -63,7 +65,7 @@
 
     <!-- START SPECIALITIES SECTION -->
 
-    <div class="specialities-section">
+    <div class="specialities-section" id="specialities">
       <div class="specialities-middle">
         <h1 class="discover-h1 specialities-h1">Specialities</h1>
         <h2 class="discover-h2 specialities-h2">OUR SERVICES</h2>
@@ -106,7 +108,7 @@
 
     <!-- START SPECIAL MENU SECTION -->
 
-    <div class="special-menu-section">
+    <div class="special-menu-section" id="our-menu">
       <h1 class="discover-h1 special-menu-h1">Today</h1>
       <h2 class="discover-h2 special-menu-h2">SPECIAL MENU</h2>
       <div class="special-menu-container" data-aos="zoom-in">
@@ -248,7 +250,7 @@
 
     <!-- START RESERVATION SECTION -->
 
-    <div class="reservation-section">
+    <div class="reservation-section" id="reservation">
       <h1 class="discover-h1">Reservation</h1>
       <h2 class="discover-h2 reservation-title-h2">BOOKING TABLE</h2>
       <div class="reservation-row">
@@ -284,7 +286,7 @@
 
     <!-- START FOOTER -->
 
-    <div class="footer">
+    <div class="footer" id="contact">
       <div class="footer-row">
         <div class="footer-col">
           <h1>CONTACT US</h1>

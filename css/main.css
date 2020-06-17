@@ -468,7 +468,7 @@ a {
 }
 
 .item7 {
-  background-image: url(../images/sushi3.jpg);
+  background-image: url(../images/sushi2.jpg);
   background-size: cover;
 }
 
@@ -893,8 +893,16 @@ a {
     height: 350px;
   }
 
+  .food-item:first-child {
+    padding: 80px;
+  }
+
   .food-overlay {
-    padding: 40px 0px;
+    padding: 40px 10px;
+  }
+
+  .discover-section {
+    padding: 70px;
   }
 
   .discover-h1 {

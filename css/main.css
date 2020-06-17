@@ -255,12 +255,12 @@ a {
 }
 
 .food-1 {
-  background-image: url(/images/food-1.jpg);
+  background-image: url(../images/food-1.jpg);
   margin-top: -30px;
 }
 
 .food-2 {
-  background-image: url(/images/food-2.jpg);
+  background-image: url(../images/food-2.jpg);
 }
 
 .food-1,
@@ -277,7 +277,7 @@ a {
   padding-top: 100px;
   padding-bottom: 100px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-    url(/images//wood.jpg);
+    url(../images//wood.jpg);
   background-size: cover;
 }
 
@@ -327,15 +327,15 @@ a {
 }
 
 .specialities-image1 {
-  background-image: url(/images/drinks.jpg);
+  background-image: url(../images/drinks.jpg);
 }
 
 .specialities-image2 {
-  background-image: url(/images/pizza.jpg);
+  background-image: url(../images/pizza.jpg);
 }
 
 .specialities-image3 {
-  background-image: url(/images/soup.jpg);
+  background-image: url(../images/soup.jpg);
 }
 
 .specialities-img {
@@ -452,28 +452,28 @@ a {
 }
 
 .item2 {
-  background-image: url(/images/icecream.jpg);
+  background-image: url(../images/icecream.jpg);
   background-size: cover;
   grid-row: 1 / 3;
 }
 
 .item4 {
-  background-image: url(/images/chicken2.jpg);
+  background-image: url(../images/chicken2.jpg);
   background-size: cover;
 }
 
 .item5 {
-  background-image: url(/images/chicken1.jpg);
+  background-image: url(../images/chicken1.jpg);
   background-size: cover;
 }
 
 .item7 {
-  background-image: url(/images/sushi3.jpg);
+  background-image: url(../images/sushi3.jpg);
   background-size: cover;
 }
 
 .item10 {
-  background-image: url(/images/sushi1.jpg);
+  background-image: url(../images/sushi1.jpg);
   background-size: cover;
 }
 
@@ -485,7 +485,7 @@ a {
 }
 
 .item12 {
-  background-image: url(/images/kebab.jpg);
+  background-image: url(../images/kebab.jpg);
   background-size: cover;
   grid-row: 3 / 5;
   grid-column: 4 / 5;
@@ -499,7 +499,7 @@ a {
 .our-menu-section {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-    url(/images/burgerknife-low.jpg);
+    url(../images/burgerknife-low.jpg);
   background-size: cover;
   padding: 50px 50px 100px;
 }
@@ -639,7 +639,7 @@ a {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-    url(/images/footer.jpg);
+    url(../images/footer.jpg);
   background-size: cover;
 }
 

@@ -12,25 +12,85 @@ body {
   background: rgb(224, 222, 212);
 }
 
+.progress-container {
+  width: 100%;
+  background: transparent;
+}
+
+.progress-bar {
+  height: 1px;
+  background-color: rgb(242, 172, 50);
+  width: 0%;
+}
+
 header {
+  width: 100%;
   height: 100vh;
-  text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-    url(../images/hero.jpg);
+    url(../images/hero-low.jpg);
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 30px 40px;
+  align-items: center;
+  transition: 0.6s;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+nav.sticky {
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+nav .logo {
+  transition: 0.6s;
+  color: rgb(255, 255, 255);
+  font-family: 'Yesteryear', cursive;
+  font-size: 40px;
+  letter-spacing: 3px;
+  margin-left: 20px;
+}
+
+.nav-ul {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  color: rgb(255, 255, 255);
+  list-style: none;
+}
+
+.nav-ul li {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+}
+
+.nav-ul li a {
+  color: rgb(255, 255, 255);
+  padding: 0px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-ul li a:hover {
+  color: rgb(242, 172, 50);
 }
 
 .header-title-1 {
   color: rgb(242, 172, 50);
   font-size: 44px;
   font-family: 'Rochester', cursive;
-  margin: 170px 0px 15px;
   animation: drop 1.5s ease;
 }
 
@@ -58,13 +118,6 @@ nav {
   background-color: rgb(201, 147, 56);
 }
 
-.logo {
-  color: rgb(255, 255, 255);
-  font-family: 'Yesteryear', cursive;
-  font-size: 40px;
-  letter-spacing: 3px;
-}
-
 .search {
   margin-left: 20px;
   margin-right: 25px;
@@ -72,44 +125,69 @@ nav {
 
 .my-bag {
   font-size: 25px;
+  margin-right: 20px;
 }
 
-#chk {
-  position: absolute;
-  visibility: hidden;
-  z-index: -100;
-}
+/** START HAMBURGER MENU  */
 
-.show-menu-btn,
-.hide-menu-btn {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 0 20px 0 20px;
   cursor: pointer;
   display: none;
-  transition: all 0.4s ease;
 }
 
-.nav-menu {
-  color: rgb(255, 255, 255);
-  list-style: none;
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
 }
 
-.nav-menu li {
-  display: inline-block;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-family: Oswald, sans-serif;
+#bar1 {
+  transform: translateY(-4px);
 }
 
-.nav-menu li a {
-  color: rgb(255, 255, 255);
-  padding: 0px 10px;
-  transition: all 0.3s ease-in-out;
+#bar3 {
+  transform: translateY(4px);
 }
 
-.nav-menu li a:hover {
-  color: rgb(242, 172, 50);
+.change .bar {
+  /* background-color: #fff; */
 }
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change {
+  display: block;
+}
+
+/** END HAMBURGER MENU  */
+
+/* ANIMATION */
+/* .menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+} */
 
 a {
   text-decoration: none;
@@ -390,7 +468,7 @@ a {
 }
 
 .item7 {
-  background-image: url(/images/sushi2.jpg);
+  background-image: url(/images/sushi3.jpg);
   background-size: cover;
 }
 
@@ -421,7 +499,7 @@ a {
 .our-menu-section {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
-    url(/images/burgerknife.jpg);
+    url(/images/burgerknife-low.jpg);
   background-size: cover;
   padding: 50px 50px 100px;
 }
@@ -663,41 +741,41 @@ a {
 /** ---  START MEDIA ---*/
 
 @media screen and (max-width: 768px) {
-  .show-menu-btn,
-  .hide-menu-btn {
+  #menu {
     display: block;
   }
 
-  .hide-menu-btn {
-    position: absolute;
-    top: 40px;
-    right: 40px;
+  .nav-ul {
+    display: none;
   }
 
-  #chk:checked ~ .nav-menu {
-    right: 0px;
-  }
-
-  .nav-menu li a {
+  .nav-ul.change {
     display: block;
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .nav-ul.change li {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+
+  .nav-ul.change li:first-child {
+    margin-top: 100px;
   }
 
   .my-bag {
-    margin-top: 30px;
+    margin-top: 5px;
   }
 
-  .nav-menu {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    right: -100%;
-    top: 0px;
-    display: flex;
-    flex-direction: column;
-    background: rgb(51, 51, 51);
-    padding: 80px 0px;
-    transition: all 0.7s ease 0s;
+  .header-title-2 {
+    font-size: 35px;
   }
 
   .food-1 {
@@ -792,6 +870,18 @@ a {
 }
 
 @media screen and (max-width: 420px) {
+  nav {
+    padding: 10px 0;
+  }
+
+  .nav-ul.change li {
+    font-size: 16px;
+  }
+
+  nav .logo {
+    font-size: 30px;
+  }
+
   .food-item {
     margin-left: 0px;
     margin-right: 0px;
@@ -865,6 +955,14 @@ a {
 
   .footer-copyright {
     font-size: 12px;
+  }
+
+  .header-title-1 {
+    font-size: 40px;
+  }
+
+  .header-title-2 {
+    font-size: 25px;
   }
 }
 /** ---  END MEDIA ---*/

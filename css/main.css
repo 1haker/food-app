@@ -671,6 +671,11 @@ a {
   margin-bottom: 20px;
   font-family: Oswald, sans-serif;
   padding: 10px 20px;
+  outline: none;
+}
+
+.footer-col input[type='text']:focus {
+  outline: 3px solid rgb(242, 172, 50);
 }
 
 .footer-col input[type='submit'] {

@@ -1,8 +1,10 @@
+// Sticky nav
+
 const toTop = document.querySelector('.to-top');
 
 window.addEventListener('scroll', () => {
-  var header = document.querySelector('header');
-  header.classList.toggle('sticky', window.scrollY > 0);
+  var nav = document.querySelector('nav');
+  nav.classList.toggle('sticky', window.scrollY > 0);
 
   if (window.pageYOffset > 100) {
     toTop.classList.add('active');
@@ -11,23 +13,23 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// window.addEventListener('scroll'),
-//   () => {
-//     var header = document.querySelector('header');
-//     header.classList.toggle('sticky', window.scrollY > 0);
-//   };
+// Menu bar
 
-// window.onscroll = function () {
-//   myFunction();
-// };
+const menuBar = document.getElementById('menu');
+const navUL = document.getElementById('nav-ul');
 
-// var navbar = document.getElementById('navbar');
-// var sticky = navbar.offsetTop;
+menuBar.addEventListener('click', () => {
+  menuBar.classList.toggle('change');
+  navUL.classList.toggle('change');
+});
 
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add('sticky');
-//   } else {
-//     navbar.classList.remove('sticky');
-//   }
-// }
+// Progress on scroll
+
+window.onscroll = () => {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById('myBar').style.width = scrolled + '%';
+};

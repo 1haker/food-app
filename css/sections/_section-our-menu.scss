@@ -1,0 +1,101 @@
+.our-menu-section {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(../images/burgerknife-low.jpg);
+  background-size: cover;
+  padding: 50px 50px 100px;
+}
+
+.our-menu-row {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+
+.our-menu-col {
+  width: 40%;
+  max-width: 250px;
+  margin: 30px;
+
+  @include mobile {
+    width: 100%;
+    margin: 0px 20px;
+  }
+}
+
+.food-containter {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  font-weight: lighter;
+  margin-bottom: 25px;
+
+  @include mobile {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+}
+
+.food-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.food-ingredient {
+  text-transform: lowercase;
+  font-family: 'Rochester', cursive;
+}
+
+.food-title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 25px;
+
+  &::after {
+    content: '--------------------';
+    font-size: 20px;
+    position: absolute;
+    left: 65px;
+    top: 0px;
+
+    @include tablet-mini {
+      content: '';
+    }
+  }
+}
+
+.food-price {
+  font-size: 25px;
+  color: rgb(242, 172, 50);
+  font-family: 'Oswald', sans-serif;
+}
+
+.our-menu-btn {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-size: 17px;
+  letter-spacing: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out 0s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+  }
+}
+
+.our-menu-h2 {
+  color: rgb(255, 255, 255);
+}

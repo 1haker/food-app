@@ -1,0 +1,33 @@
+@import './variables';
+@import './mixins';
+@import './keyframes';
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: color(primary);
+
+  @import './header';
+  @import './sections/section-discover';
+  @import './sections/section-specialities';
+  @import './sections/section-special-menu';
+  @import './sections/section-our-menu';
+  @import './sections/section-reservation';
+  @import './footer';
+}

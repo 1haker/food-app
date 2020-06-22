@@ -1,0 +1,255 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(../images/hero-low.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  nav.sticky {
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 1000;
+    flex-wrap: wrap;
+
+    @include mobile {
+      padding: 10px 0;
+    }
+
+    /** ANIMATION MENU BAR  */
+
+    .change #bar1 {
+      transform: translateY(4px) rotateZ(-45deg);
+    }
+
+    .change #bar2 {
+      opacity: 0;
+    }
+
+    .change #bar3 {
+      transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    #bar1 {
+      transform: translateY(-4px);
+    }
+
+    #bar3 {
+      transform: translateY(4px);
+    }
+
+    /** START HAMBURGER MENU  */
+
+    #menu {
+      width: 35px;
+      height: 30px;
+      margin: 0 20px 0 20px;
+      cursor: pointer;
+      display: none;
+
+      @include tablet-mini {
+        display: block;
+      }
+
+      .bar {
+        height: 5px;
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+      }
+
+      .change {
+        display: block;
+      }
+    }
+
+    /** END HAMBURGER MENU  */
+
+    .logo {
+      transition: 0.6s;
+      color: rgb(255, 255, 255);
+      font-family: 'Yesteryear', cursive;
+      font-size: 40px;
+      letter-spacing: 3px;
+      margin-left: 20px;
+
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+
+    .nav-ul {
+      color: rgb(255, 255, 255);
+      list-style: none;
+
+      @include tablet-mini {
+        display: none;
+      }
+
+      li {
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: Oswald, sans-serif;
+
+        a {
+          color: rgb(255, 255, 255);
+          padding: 0px 10px;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: color(accent);
+          }
+        }
+
+        .search {
+          margin-left: 20px;
+          margin-right: 25px;
+        }
+
+        .my-bag {
+          font-size: 25px;
+
+          @include tablet-mini {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    .nav-ul.change {
+      @include tablet-mini {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0;
+
+        li {
+          margin-bottom: 30px;
+          font-size: 18px;
+
+          @include mobile {
+            font-size: 16px;
+          }
+
+          &:first-child {
+            margin-top: 100px;
+          }
+        }
+      }
+    }
+
+    .progress-container {
+      width: 100%;
+      background: transparent;
+    }
+
+    .progress-bar {
+      height: 1px;
+      background-color: color(accent);
+      width: 0%;
+    }
+  }
+
+  .header-title-1 {
+    color: color(accent);
+    font-size: 44px;
+    font-family: 'Rochester', cursive;
+    animation: drop 1.5s ease;
+
+    @include tablet-mini {
+      font-size: 35px;
+    }
+
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+
+  .header-title-2 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 55px;
+    letter-spacing: 6px;
+    margin-bottom: 25px;
+    animation: drop-left 1.5s ease;
+
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+
+  .header-cta-button {
+    color: #000;
+    background-color: color(accent);
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    animation: drop-down 1.5s ease;
+
+    &:hover {
+      background-color: color(accent-light);
+    }
+  }
+}
+
+/** STICKY NAV */
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: rgb(31, 31, 31);
+  opacity: 0;
+  pointer-events: none;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+
+  i {
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  @include mobile {
+    width: 40px;
+    height: 40px;
+  }
+}

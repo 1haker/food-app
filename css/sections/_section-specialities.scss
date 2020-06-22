@@ -1,0 +1,122 @@
+.specialities-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(../images//wood.jpg);
+  background-size: cover;
+}
+
+.specialities-middle {
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    border-top: 100px solid rgb(224, 222, 212);
+    border-right: 100vw solid transparent;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    border-bottom: 100px solid rgb(224, 222, 212);
+    border-left: 100vw solid transparent;
+  }
+}
+
+.specialities-h1 {
+  font-size: 40px;
+}
+
+.specialities-h2 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  margin-bottom: 80px;
+}
+
+.specialities-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.specialities-col {
+  width: 350px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @include mobile {
+    width: 250px;
+  }
+}
+
+.specialities-image1 {
+  background-image: url(../images/drinks.jpg);
+}
+
+.specialities-image2 {
+  background-image: url(../images/pizza.jpg);
+}
+
+.specialities-image3 {
+  background-image: url(../images/soup.jpg);
+}
+
+.specialities-img {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 0px 10px 9px;
+
+  @include mobile {
+    height: 200px;
+  }
+}
+
+.spacialities-h3 {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.specialities-overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(242, 172, 50, 0.35);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.specialities-image1:hover .specialities-overlay,
+.specialities-image2:hover .specialities-overlay,
+.specialities-image3:hover .specialities-overlay {
+  opacity: 1;
+}
+
+.specialities-overlay-border {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: Oswald, sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+}

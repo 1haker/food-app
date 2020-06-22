@@ -1,0 +1,111 @@
+.discover-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgb(224, 222, 212);
+  padding: 100px;
+
+  @include mobile {
+    padding: 70px;
+  }
+}
+
+.food-item {
+  height: 450px;
+  width: 240px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+
+  @include mobile {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 350px;
+
+    &:first-child {
+      padding: 80px;
+    }
+  }
+
+  p {
+    color: rgb(83, 81, 81);
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-size: 16px;
+    color: color(accent);
+  }
+}
+
+.food-border {
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+  border-color: color(accent);
+  border-image: initial;
+}
+
+.food-overlay {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.75) -3px 3px 23px 0px;
+  padding: 100px 10px 0px;
+
+  @include mobile {
+    padding: 40px 10px;
+  }
+}
+
+.discover-h1 {
+  font-family: 'Rochester', cursive;
+  color: color(accent);
+  margin-bottom: 15px;
+
+  @include mobile {
+    font-size: 30px;
+  }
+}
+
+.discover-h2 {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+
+  @include mobile {
+    font-size: 25px;
+  }
+}
+
+.food-1 {
+  background-image: url(../images/food-1.jpg);
+  margin-top: -30px;
+
+  @include tablet-mini {
+    margin-top: 70px;
+  }
+}
+
+.food-2 {
+  background-image: url(../images/food-2.jpg);
+
+  @include tablet {
+    margin-top: 70px;
+  }
+
+  @include tablet-mini {
+    margin-top: 70px;
+  }
+}
+
+.food-1,
+.food-2 {
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.75) -3px 3px 23px 0px;
+}

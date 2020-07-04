@@ -21,7 +21,16 @@ const navUL = document.getElementById('nav-ul');
 menuBar.addEventListener('click', () => {
   menuBar.classList.toggle('change');
   navUL.classList.toggle('change');
+  toggleOverflowMenu();
 });
+
+const toggleOverflowMenu = () => {
+  if (document.body.style.overflow === 'hidden') {
+    document.body.style.overflow = 'auto';
+  } else {
+    document.body.style.overflow = 'hidden';
+  }
+};
 
 // Progress on scroll
 

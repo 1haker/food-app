@@ -91,8 +91,8 @@ body {
 body header {
   width: 100%;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(../images/hero-low.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/hero-low.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(../images//hero-low-min.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images//hero-low-min.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,6 +248,7 @@ body header nav .nav-ul li .search {
 
 body header nav .nav-ul li .my-bag {
   font-size: 25px;
+  margin-right: 10px;
 }
 
 @media (max-width: 768px) {
@@ -332,6 +333,12 @@ body header .header-title-2 {
   margin-bottom: 25px;
   -webkit-animation: drop-left 1.5s ease;
           animation: drop-left 1.5s ease;
+}
+
+@media (max-width: 768px) {
+  body header .header-title-2 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -504,7 +511,7 @@ body .discover-h2 {
 }
 
 body .food-1 {
-  background-image: url(../images/food-1.jpg);
+  background-image: url(../images/food-1-min.jpg);
   margin-top: -30px;
 }
 
@@ -515,7 +522,7 @@ body .food-1 {
 }
 
 body .food-2 {
-  background-image: url(../images/food-2.jpg);
+  background-image: url(../images/food-2-min.jpg);
 }
 
 @media (max-width: 1024px) {
@@ -540,8 +547,8 @@ body .food-2 {
 body .specialities-section {
   padding-top: 100px;
   padding-bottom: 100px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(../images//wood.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images//wood.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(../images/wood-min.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/wood-min.jpg);
   background-size: cover;
 }
 
@@ -602,15 +609,15 @@ body .specialities-col {
 }
 
 body .specialities-image1 {
-  background-image: url(../images/drinks.jpg);
+  background-image: url(../images/drinks-min.jpg);
 }
 
 body .specialities-image2 {
-  background-image: url(../images/pizza.jpg);
+  background-image: url(../images/pizza-min.jpg);
 }
 
 body .specialities-image3 {
-  background-image: url(../images/soup.jpg);
+  background-image: url(../images/soup-min.jpg);
 }
 
 body .specialities-img {
@@ -793,7 +800,7 @@ body .item1 {
 }
 
 body .item2 {
-  background-image: url(../images/icecream.jpg);
+  background-image: url(../images/icecream-min.jpg);
   background-size: cover;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -823,7 +830,7 @@ body .item2 {
 }
 
 body .item4 {
-  background-image: url(../images/chicken2.jpg);
+  background-image: url(../images/chicken2-min.jpg);
   background-size: cover;
 }
 
@@ -839,7 +846,7 @@ body .item4 {
 }
 
 body .item5 {
-  background-image: url(../images/chicken1.jpg);
+  background-image: url(../images/chicken1-min.jpg);
   background-size: cover;
 }
 
@@ -866,7 +873,7 @@ body .item5 {
 }
 
 body .item7 {
-  background-image: url(../images/sushi2.jpg);
+  background-image: url(../images/sushi2-min.jpg);
   background-size: cover;
 }
 
@@ -904,7 +911,7 @@ body .item7 {
 }
 
 body .item10 {
-  background-image: url(../images/sushi1.jpg);
+  background-image: url(../images/sushi1-min.jpg);
   background-size: cover;
 }
 
@@ -942,7 +949,7 @@ body .item11 {
 }
 
 body .item12 {
-  background-image: url(../images/kebab.jpg);
+  background-image: url(../images/kebab-min.jpg);
   background-size: cover;
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
@@ -966,8 +973,8 @@ body .item12 {
 
 body .our-menu-section {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(../images/burgerknife-low.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/burgerknife-low.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(../images/burgerknife-low-min.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/burgerknife-low-min.jpg);
   background-size: cover;
   padding: 50px 50px 100px;
 }
@@ -1090,19 +1097,18 @@ body .our-menu-h2 {
 }
 
 body .reservation-section {
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #e0ded4;
-  padding: 50px;
+  padding: 50px 0;
 }
 
 body .reservation-title-h2 {
@@ -1120,36 +1126,29 @@ body .reservation-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 65%;
+  width: 50%;
+  margin: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-@media (max-width: 1024px) {
-  body .reservation-row {
-    width: 75%;
-  }
-}
-
-@media (max-width: 768px) {
-  body .reservation-row {
-    width: 100%;
-  }
-}
-
-@media (max-width: 420px) {
-  body .reservation-row {
-    width: 60%;
-  }
+body .reservation-row .reservation-btn {
+  background: #f2ac32;
+  font-family: Oswald, sans-serif;
+  color: white;
+  width: 150px;
+  height: 44px;
+  padding: 10px 0px;
+  border: none;
+  margin: 5px;
+  font-size: 17px;
 }
 
 body .reservation-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 150px;
+  min-width: 150px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1157,25 +1156,22 @@ body .reservation-box {
   color: #535151;
   padding: 10px 0px;
   background: white;
+  margin: 5px;
+}
+
+body .reservation-box .reservation-info {
+  margin-left: 10px;
+}
+
+body .reservation-box .reservation-icon {
+  padding: 0px 20px;
+  border-right: 1px solid #535151;
 }
 
 @media (max-width: 420px) {
   body .reservation-box {
     margin-bottom: 20px;
   }
-}
-
-body .reservation-icon {
-  padding: 0px 20px;
-  border-right: 1px solid #535151;
-}
-
-body .reservation-btn {
-  background-color: #f2ac32;
-  font-family: Oswald, sans-serif;
-  color: white;
-  font-size: 20px;
-  padding: 10px 30px;
 }
 
 body .footer {
@@ -1189,8 +1185,8 @@ body .footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../images/footer.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/footer.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-min.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/footer-min.jpg);
   background-size: cover;
 }
 

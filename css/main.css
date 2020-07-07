@@ -1142,6 +1142,11 @@ body .reservation-row .reservation-btn {
   border: none;
   margin: 5px;
   font-size: 17px;
+  cursor: pointer;
+}
+
+body .reservation-row .reservation-btn:hover {
+  background: #c99338;
 }
 
 body .reservation-box {
@@ -1282,6 +1287,11 @@ body .footer-col input[type='submit'] {
   border-color: initial;
   -o-border-image: initial;
      border-image: initial;
+  cursor: pointer;
+}
+
+body .footer-col input[type='submit']:hover {
+  background-color: #c99338;
 }
 
 @media (max-width: 420px) {

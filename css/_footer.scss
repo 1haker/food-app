@@ -54,13 +54,13 @@
     }
 
     &:focus {
-      outline: 3px solid rgb(242, 172, 50);
+      outline: 3px solid color(accent);
     }
   }
 
   input[type='submit'] {
     text-align: center;
-    background-color: rgb(242, 172, 50);
+    background-color: color(accent);
     width: 200px;
     height: 50px;
     color: rgb(255, 255, 255);
@@ -72,6 +72,11 @@
     border-style: none;
     border-color: initial;
     border-image: initial;
+    cursor: pointer;
+
+    &:hover {
+      background-color: color(accent-light);
+    }
 
     @include mobile {
       height: 35px;
@@ -81,7 +86,7 @@
   }
 
   h1 {
-    color: rgb(242, 172, 50);
+    color: color(accent);
     font-size: 20px;
     letter-spacing: 2px;
     margin-bottom: 40px;

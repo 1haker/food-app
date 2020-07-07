@@ -20,7 +20,7 @@
   flex-wrap: wrap;
 
   .reservation-btn {
-    background: rgb(242, 172, 50);
+    background: color(accent);
     font-family: Oswald, sans-serif;
     color: rgb(255, 255, 255);
     width: 150px;
@@ -29,6 +29,11 @@
     border: none;
     margin: 5px;
     font-size: 17px;
+    cursor: pointer;
+
+    &:hover {
+      background: color(accent-light);
+    }
   }
 }
 

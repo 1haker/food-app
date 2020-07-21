@@ -96,6 +96,20 @@
   }
 }
 
+.our-menu-h3 {
+  font-size: 35px;
+
+  @include mobile {
+    font-size: 30px;
+  }
+}
+
 .our-menu-h2 {
   color: rgb(255, 255, 255);
+  font-size: 45px;
+  margin-bottom: 40px;
+
+  @include mobile {
+    font-size: 40px;
+  }
 }

@@ -62,21 +62,17 @@
   }
 }
 
-.discover-h1 {
-  font-family: 'Rochester', cursive;
-  color: color(accent);
-  margin-bottom: 15px;
+.discover-h3 {
+  font-size: 30px;
 
   @include mobile {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
 .discover-h2 {
-  font-family: Oswald, sans-serif;
-  font-size: 30px;
-  letter-spacing: 2px;
   margin-bottom: 15px;
+  font-size: 30px;
 
   @include mobile {
     font-size: 25px;

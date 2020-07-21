@@ -5,6 +5,24 @@
   flex-direction: column;
   align-items: center;
   padding: 50px;
+
+  .special-menu-h3 {
+    font-size: 35px;
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  .special-menu-h2 {
+    color: #000;
+    font-size: 45px;
+    margin-bottom: 40px;
+
+    @include mobile {
+      font-size: 40px;
+    }
+  }
 }
 
 .special-menu-container {
@@ -32,7 +50,7 @@
   color: color(accent);
 }
 
-.white-file h1 {
+.white-file h3 {
   color: rgb(0, 0, 0);
 }
 
@@ -48,7 +66,7 @@
   font-size: 30px;
 }
 
-.file-style h1 {
+.file-style h3 {
   font-family: Oswald, sans-serif;
   font-size: 25px;
   letter-spacing: 2px;

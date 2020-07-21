@@ -29,14 +29,22 @@
   }
 }
 
-.specialities-h1 {
-  font-size: 40px;
+.specialities-h3 {
+  font-size: 35px;
+
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 .specialities-h2 {
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 80px;
+
+  @include mobile {
+    font-size: 40px;
+  }
 }
 
 .specialities-row {

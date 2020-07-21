@@ -409,6 +409,17 @@ body .to-top {
   }
 }
 
+body .section-h3 {
+  font-family: 'Rochester', cursive;
+  color: #f2ac32;
+  margin-bottom: 15px;
+}
+
+body .section-h2 {
+  font-family: Oswald, sans-serif;
+  letter-spacing: 2px;
+}
+
 body .discover-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,23 +496,19 @@ body .food-overlay {
   }
 }
 
-body .discover-h1 {
-  font-family: 'Rochester', cursive;
-  color: #f2ac32;
-  margin-bottom: 15px;
+body .discover-h3 {
+  font-size: 30px;
 }
 
 @media (max-width: 420px) {
-  body .discover-h1 {
-    font-size: 30px;
+  body .discover-h3 {
+    font-size: 25px;
   }
 }
 
 body .discover-h2 {
-  font-family: Oswald, sans-serif;
-  font-size: 30px;
-  letter-spacing: 2px;
   margin-bottom: 15px;
+  font-size: 30px;
 }
 
 @media (max-width: 420px) {
@@ -575,14 +582,26 @@ body .specialities-middle::after {
   border-left: 100vw solid transparent;
 }
 
-body .specialities-h1 {
-  font-size: 40px;
+body .specialities-h3 {
+  font-size: 35px;
+}
+
+@media (max-width: 420px) {
+  body .specialities-h3 {
+    font-size: 30px;
+  }
 }
 
 body .specialities-h2 {
   color: white;
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 80px;
+}
+
+@media (max-width: 420px) {
+  body .specialities-h2 {
+    font-size: 40px;
+  }
 }
 
 body .specialities-row {
@@ -701,6 +720,28 @@ body .special-menu-section {
   padding: 50px;
 }
 
+body .special-menu-section .special-menu-h3 {
+  font-size: 35px;
+}
+
+@media (max-width: 420px) {
+  body .special-menu-section .special-menu-h3 {
+    font-size: 30px;
+  }
+}
+
+body .special-menu-section .special-menu-h2 {
+  color: #000;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 420px) {
+  body .special-menu-section .special-menu-h2 {
+    font-size: 40px;
+  }
+}
+
 body .special-menu-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -740,7 +781,7 @@ body .white-file {
   color: #f2ac32;
 }
 
-body .white-file h1 {
+body .white-file h3 {
   color: black;
 }
 
@@ -765,7 +806,7 @@ body .file-style i {
   font-size: 30px;
 }
 
-body .file-style h1 {
+body .file-style h3 {
   font-family: Oswald, sans-serif;
   font-size: 25px;
   letter-spacing: 2px;
@@ -1092,8 +1133,26 @@ body .our-menu-btn:hover {
   color: black;
 }
 
+body .our-menu-h3 {
+  font-size: 35px;
+}
+
+@media (max-width: 420px) {
+  body .our-menu-h3 {
+    font-size: 30px;
+  }
+}
+
 body .our-menu-h2 {
   color: white;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 420px) {
+  body .our-menu-h2 {
+    font-size: 40px;
+  }
 }
 
 body .reservation-section {
@@ -1114,6 +1173,23 @@ body .reservation-section {
 body .reservation-title-h2 {
   color: black;
   margin-bottom: 50px;
+  font-size: 45px;
+}
+
+@media (max-width: 420px) {
+  body .reservation-title-h2 {
+    font-size: 40px;
+  }
+}
+
+body .reservation-title-h3 {
+  font-size: 35px;
+}
+
+@media (max-width: 420px) {
+  body .reservation-title-h3 {
+    font-size: 30px;
+  }
 }
 
 body .reservation-row {
@@ -1302,7 +1378,7 @@ body .footer-col input[type='submit']:hover {
   }
 }
 
-body .footer-col h1 {
+body .footer-col h3 {
   color: #f2ac32;
   font-size: 20px;
   letter-spacing: 2px;

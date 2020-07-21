@@ -9,6 +9,19 @@
 .reservation-title-h2 {
   color: rgb(0, 0, 0);
   margin-bottom: 50px;
+  font-size: 45px;
+
+  @include mobile {
+    font-size: 40px;
+  }
+}
+
+.reservation-title-h3 {
+  font-size: 35px;
+
+  @include mobile {
+    font-size: 30px;
+  }
 }
 
 .reservation-row {

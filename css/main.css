@@ -557,29 +557,12 @@ body .specialities-section {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(../images/wood-min.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/wood-min.jpg);
   background-size: cover;
+  -webkit-clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
+          clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
 }
 
 body .specialities-middle {
   text-align: center;
-  position: relative;
-}
-
-body .specialities-middle::before {
-  content: '';
-  position: absolute;
-  top: -100px;
-  left: 0px;
-  border-top: 100px solid #e0ded4;
-  border-right: 100vw solid transparent;
-}
-
-body .specialities-middle::after {
-  content: '';
-  position: absolute;
-  bottom: -100px;
-  right: 0px;
-  border-bottom: 100px solid #e0ded4;
-  border-left: 100vw solid transparent;
 }
 
 body .specialities-h3 {

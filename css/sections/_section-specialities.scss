@@ -4,29 +4,11 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
     url(../images/wood-min.jpg);
   background-size: cover;
+  clip-path: polygon(0 6%, 100% 0, 100% 94%, 0 100%);
 }
 
 .specialities-middle {
   text-align: center;
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: -100px;
-    left: 0px;
-    border-top: 100px solid rgb(224, 222, 212);
-    border-right: 100vw solid transparent;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -100px;
-    right: 0px;
-    border-bottom: 100px solid rgb(224, 222, 212);
-    border-left: 100vw solid transparent;
-  }
 }
 
 .specialities-h3 {

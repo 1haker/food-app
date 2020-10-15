@@ -18,6 +18,21 @@ window.addEventListener('scroll', () => {
 const menuBar = document.getElementById('menu');
 const navUL = document.getElementById('nav-ul');
 
+const x = window.matchMedia("(max-width: 768px)")
+
+if(x.matches) {
+  console.log('we are on mobile');
+  const navULMobile2 = document.querySelectorAll('#nav-ul li');
+
+  navULMobile2.forEach(element => {
+    element.addEventListener('click', () => {
+      menuBar.classList.toggle('change');
+      navUL.classList.toggle('change');
+      toggleOverflowMenu();
+    })
+  });
+}
+
 menuBar.addEventListener('click', () => {
   menuBar.classList.toggle('change');
   navUL.classList.toggle('change');
